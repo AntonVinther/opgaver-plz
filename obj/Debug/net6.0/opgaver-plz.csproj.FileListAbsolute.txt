@@ -1,0 +1,15 @@
+C:\Gitkraken repos\opgaver-plz\bin\Debug\net6.0\opgaver-plz.exe
+C:\Gitkraken repos\opgaver-plz\bin\Debug\net6.0\opgaver-plz.deps.json
+C:\Gitkraken repos\opgaver-plz\bin\Debug\net6.0\opgaver-plz.runtimeconfig.json
+C:\Gitkraken repos\opgaver-plz\bin\Debug\net6.0\opgaver-plz.dll
+C:\Gitkraken repos\opgaver-plz\bin\Debug\net6.0\opgaver-plz.pdb
+C:\Gitkraken repos\opgaver-plz\obj\Debug\net6.0\opgaver-plz.csproj.AssemblyReference.cache
+C:\Gitkraken repos\opgaver-plz\obj\Debug\net6.0\opgaver-plz.GeneratedMSBuildEditorConfig.editorconfig
+C:\Gitkraken repos\opgaver-plz\obj\Debug\net6.0\opgaver-plz.AssemblyInfoInputs.cache
+C:\Gitkraken repos\opgaver-plz\obj\Debug\net6.0\opgaver-plz.AssemblyInfo.cs
+C:\Gitkraken repos\opgaver-plz\obj\Debug\net6.0\opgaver-plz.csproj.CoreCompileInputs.cache
+C:\Gitkraken repos\opgaver-plz\obj\Debug\net6.0\opgaver-plz.dll
+C:\Gitkraken repos\opgaver-plz\obj\Debug\net6.0\refint\opgaver-plz.dll
+C:\Gitkraken repos\opgaver-plz\obj\Debug\net6.0\opgaver-plz.pdb
+C:\Gitkraken repos\opgaver-plz\obj\Debug\net6.0\opgaver-plz.genruntimeconfig.cache
+C:\Gitkraken repos\opgaver-plz\obj\Debug\net6.0\ref\opgaver-plz.dll
