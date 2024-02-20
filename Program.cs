@@ -42,8 +42,7 @@ for (int j = 0; j < numbers.Length; j++){
 
 -------------------------------
 
-euler 10
-*/
+euler 12
 using System.Security.Cryptography;
 
 int divisors = 0;
@@ -73,3 +72,31 @@ for (int j = 1; j < triangular.Length; j++)
     }
     divisors = 0;
 }
+
+---------------------------
+
+tes stockprices
+*/
+int buy = 0, sell = 0;
+int product = 0;
+int largestproduct = 0;
+int[] stockprices = { 7, 1, 5, 3, 6, 4, 2};
+for (int i = 0; i < stockprices.Length; i++)
+{
+    for (int j = 0; j < stockprices.Length; j++)
+    {
+        if (j > i)
+        {
+            product += stockprices[j] - stockprices[i];
+            if (product > largestproduct)
+            {
+                largestproduct = product;
+                buy = i + 1;
+                sell = j + 1;
+            }
+            product = 0;
+        }
+    }
+}
+Console.WriteLine("The largest profit possible is {0} if you buy on day {1}, and sell on day {2}", largestproduct, buy, sell);
+    
