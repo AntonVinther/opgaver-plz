@@ -228,22 +228,50 @@ for (int i = 0; i < characters.Length; i++)
     sum += int.Parse("" + characters[i]);
 }
 Console.WriteLine(sum);
+
+using System.Collections.Immutable;
+    var tierlist = new Dictionary<string, List<string>>(){
+    {"Orgasme", new List<string>()},
+    {"A_Tier", new List<string>()},
+    {"B_Tier", new List<string>()},
+    {"C_Tier", new List<string>()},
+    {"D_Tier", new List<string>()},
+    {"E_Tier", new List<string>()},
+    {"Opkast", new List<string>()}
+};
+
+while (true)
+{
+    foreach (var kp in tierlist)
+    {
+        Console.WriteLine("{0} : {1}", kp.Key, string.Join(", ", kp.Value));
+    }
+
+    Console.WriteLine("Hvilken bajer skal på listen?");
+    string bajer = Console.ReadLine();
+    Console.WriteLine("Hvilken tier hører den til?");
+    String tier = Console.ReadLine();
+    if (tierlist.ContainsKey(tier))
+    {
+        tierlist[tier].Add(bajer);
+    }
+    else
+    {
+        Console.WriteLine("no");
+    }
+
+    Console.Clear();
+}
 */
 
-using System.Numerics;
-int index = 0;
-int[] fibo = new int[999999999999];
+using System.Transactions;
 
-fibo[1] = 1;
-fibo[2] = 2;
-
-for (int i = 2; i < fibo.Length; i++)
+Console.WriteLine("Do you know Elias?");
+if (Console.ReadLine() == "yes")
 {
-    fibo[i] = fibo[i - 1] + fibo[i - 2];
-    index += 1;
-    char[] characters = fibo[i].ToCharArray();
-    if (characters[i] >= 1000)
+    Console.WriteLine("Im sorry to hear that");
+    if (Console.ReadKey().Key != ConsoleKey.Enter)
     {
-        Console.WriteLine(fibo[i], index);
+        Console.WriteLine("me too");
     }
 }
