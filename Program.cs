@@ -229,6 +229,8 @@ for (int i = 0; i < characters.Length; i++)
 }
 Console.WriteLine(sum);
 
+----------------------------------------------------
+
 using System.Collections.Immutable;
     var tierlist = new Dictionary<string, List<string>>(){
     {"Orgasme", new List<string>()},
@@ -262,16 +264,66 @@ while (true)
 
     Console.Clear();
 }
-*/
+-------------------------------
 
-using System.Transactions;
-
-Console.WriteLine("Do you know Elias?");
-if (Console.ReadLine() == "yes")
+public class program
 {
-    Console.WriteLine("Im sorry to hear that");
-    if (Console.ReadKey().Key != ConsoleKey.Enter)
+    public static void Main()
     {
-        Console.WriteLine("me too");
+        Getname("What is your name?");
+        PrintName(Console.ReadLine());
+    }
+    public static void Getname(string whatisname)
+    {
+        Console.WriteLine($"{whatisname}");
+    }
+    public static void PrintName(string NAME)
+    {
+        Console.WriteLine($"Well hi there {NAME}, nice to meet you!");
     }
 }
+
+public class program
+{
+    public static void Main()
+    {
+        text(Console.ReadLine());
+    }
+    public static void text(string spaces)
+    {
+        Console.WriteLine($"The sentence ''{spaces}'' contain {spaces.Split(' ').Length-1} spaces");
+    }
+}
+
+----------------------------
+opg 5 methods (functions)
+
+using System.Globalization;
+using System.Security.Cryptography.X509Certificates;
+Console.WriteLine("How many numbers do you wish to add up?");
+int length = int.Parse(Console.ReadLine());
+
+int[] arr = new int[length];
+
+Console.WriteLine("What numbers then?");
+for (int i = 0; i < length; i++)
+{
+    arr[i] = int.Parse(Console.ReadLine());
+}
+calcuteArraySum(arr);
+int calcuteArraySum(int[] arr)
+{
+    int sum = 0;
+
+    foreach (int number in arr)
+    {
+        sum += number;
+    }
+    Console.WriteLine("The sum is: " + sum);
+    return sum;
+}
+*/
+int[] twoNumbs = new int[2];
+Console.WriteLine("what numbers?");
+twoNumbs[0] = int.Parse(Console.ReadLine());
+twoNumbs[1] = int.Parse(Console.ReadLine());
