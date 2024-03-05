@@ -322,8 +322,70 @@ int calcuteArraySum(int[] arr)
     Console.WriteLine("The sum is: " + sum);
     return sum;
 }
+
+---------------------
+
+
+1. Write a program in C# Sharp to print the first n natural numbers using recursion.
+Test Data :
+How many numbers to print : 10
+Expected Output :
+1 2 3 4 5 6 7 8 9 10
+
+using System.ComponentModel.DataAnnotations.Schema;
+
+long collatz;
+int chain = 0;
+int longestchain = 0;
+long largestnumber = 0;
+for (long i = 13; i < 1000000; i++)
+{
+    collatz = i;
+    while (collatz != 1)
+    {
+        if (collatz % 2 == 0)
+        {
+            collatz /= 2;
+            chain++;
+        }
+        else if (collatz % 2 != 0)
+        {
+            collatz *= 3;
+            collatz += 1;
+            chain++;
+        }
+    }
+    if (chain > longestchain)
+    {
+        longestchain = chain;
+        if (i > largestnumber)
+        {
+            largestnumber = i;
+        }
+    }
+    chain = 0;
+}
+Console.WriteLine("The number below 1 million, with the largest chain is {0} and the length of its chain is {1}", largestnumber, longestchain);
+void countTo(int curr, int n){
+    if (curr != n + 1){
+        Console.Write($"{curr} ");
+        countTo(++curr,n);
+    }
+}
+
+countTo(1,10);
+
 */
-int[] twoNumbs = new int[2];
-Console.WriteLine("what numbers?");
-twoNumbs[0] = int.Parse(Console.ReadLine());
-twoNumbs[1] = int.Parse(Console.ReadLine());
+void even(int curr, int n)
+{
+    if (curr != n + 1)
+    {
+        if (curr % 2 == 0)
+        {
+            Console.Write($"{curr}, ");
+        }
+        even(++curr, n);
+    }
+}
+Console.Write("The even numbers from 1-20 is: ");
+even(1, 20);
