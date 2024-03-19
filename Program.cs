@@ -375,7 +375,6 @@ void countTo(int curr, int n){
 
 countTo(1,10);
 
-*/
 void even(int curr, int n)
 {
     if (curr != n + 1)
@@ -389,3 +388,70 @@ void even(int curr, int n)
 }
 Console.Write("The even numbers from 1-20 is: ");
 even(1, 20);
+
+10. Write a program in C# Sharp to create a function to calculate the sum of the individual digits of a given number.
+Test Data :
+
+
+
+
+
+
+
+Recursion
+Console.WriteLine("enter a number");
+int n = int.Parse(Console.ReadLine());
+
+Print(n);
+
+void Print(int n){
+        Console.WriteLine(n);
+        if (n == 1){
+            return;
+        }
+        Print(n-1);
+}
+
+---------------------------------------
+Console.WriteLine("enter a number");
+
+int n = int.Parse(Console.ReadLine());
+
+int i = sum(n);
+Console.WriteLine(i);
+
+int sum(int n){
+    if(n == 1){
+        return  n;
+    }
+    return n + sum(n - 1);;
+}
+
+-------------------------
+
+Write a program in C to print even or odd numbers in a given range using recursion.
+Console.WriteLine("enter a number");
+
+int n = int.Parse(Console.ReadLine());
+
+even(n);
+void even(int n){
+    if (n % 2 == 0){
+        Console.WriteLine(n + " Is an even number");
+    }
+    if (n == 2){
+        return;
+    }
+    even(n-1);
+}
+
+--------------------------
+
+*/
+int factorial(int n){
+    if (n == 0)
+    return 1;
+    else
+    return n*factorial(n-1);
+}
+Console.WriteLine("factorial is " + factorial(int.Parse(Console.ReadLine())));
